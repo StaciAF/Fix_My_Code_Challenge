@@ -54,9 +54,9 @@ class User():
             return False
         if self.__password is None:
             return False
-        return True
-        # next line REMOVED for testing
-        # hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
+        else:
+            hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
+            return True
 
 if __name__ == '__main__':
     print("Test User")
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     if user_2.password is not None:
         print("User.password should be None if setter to an integer")
 
-    if not user_1.is_valid_password(u_pwd):
+    if user_1.is_valid_password(u_pwd):
         print("is_valid_password should return True if it's the right \
 password")
 
