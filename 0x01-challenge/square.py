@@ -19,7 +19,7 @@ class Square:
 
     def __str__(self):
         """ string rep of square """
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 if __name__ == "__main__":
 
