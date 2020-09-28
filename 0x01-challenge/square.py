@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+""" nothing imported """
 
-class Square():
+
+class Square:
     """ defines Square class """
     width = 0
     height = 0
@@ -13,7 +15,7 @@ class Square():
         """ Area of the square """
         return self.width ** 2
 
-    def permiter_of_my_Square(self):
+    def perimeter_of_my_Square(self):
         return (self.width * 4)
 
     def __str__(self):
@@ -24,4 +26,4 @@ if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_Square())
-    print(s.permiter_of_my_Square())
+    print(s.perimeter_of_my_Square())
