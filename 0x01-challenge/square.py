@@ -2,7 +2,7 @@
 """ nothing imported """
 
 
-class square():
+class Square:
     """ defines Square class """
     width = 0
     height = 0
@@ -16,7 +16,7 @@ class square():
         """ Area of the square """
         return (self.width * self.height)
 
-    def perimeter_of_my_Square(self):
+    def PermiterOfMySquare(self):
         """ Perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
