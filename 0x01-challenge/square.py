@@ -2,7 +2,7 @@
 """ nothing imported """
 
 
-class Square:
+class square:
     """ defines Square class """
     width = 0
     height = 0
