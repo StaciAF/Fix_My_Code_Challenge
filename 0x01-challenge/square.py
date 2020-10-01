@@ -14,19 +14,19 @@ class Square:
 
     def area_of_my_Square(self):
         """ Area of the square """
-        return (self.width ** 2)
+        return (self.width * self.height)
 
     def perimeter_of_my_Square(self):
         """ Perimeter of the square """
-        return (self.width * 4)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ string rep of square """
-        return "{}/{}".format(self.width, self.width)
+        return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
 
-    s = Square(width=12)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_Square())
     print(s.perimeter_of_my_Square())
